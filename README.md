@@ -1,4 +1,24 @@
+# Heat-Attributable CVD Mortality — South & Southeast Asia [Under Review]
 
+## Overview
+
+This repository contains R code for estimating heat-attributable cardiovascular disease (CVD) mortality across 18 countries in South and Southeast Asia under the SSP5-8.5 (high emissions) scenario. The analysis uses a Monte Carlo simulation framework with age-stratified relative risks (RR) by Köppen climate zone, gridded population projections, and a three-component decomposition to separate the contributions of heat, population growth, and demographic aging to future CVD burden.
+
+---
+
+## Countries Included
+
+**South Asia (7):** Afghanistan (AFG), Bangladesh (BGD), Bhutan (BTN), India (IND), Nepal (NPL), Pakistan (PAK), Sri Lanka (LKA)
+
+**Southeast Asia (11):** Brunei (BRN), Cambodia (KHM), Indonesia (IDN), Laos (LAO), Malaysia (MYS), Myanmar (MMR), Philippines (PHL), Singapore (SGP), Thailand (THA), Timor-Leste (TLS), Vietnam (VNM)
+
+---
+
+## Methods Summary
+
+### 1. Population Attributable Fraction (PAF)
+
+Heat-attributable deaths at each pixel are estimated using:
 Relative risks are **age-stratified** by Köppen climate zone:
 - Ages 0–64 (`0_39`, `40_59`, `60_69`): `grid_rr_65less.csv`
 - Ages 65+ (`70_79`, `80p`): `grid_rr_65plus.csv`
